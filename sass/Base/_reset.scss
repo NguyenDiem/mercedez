@@ -9,5 +9,5 @@ body {
   font-family: "MBCorpo", sans-serif;
   background-color: $color-black-0;
   @include styleText($fs-0, $color-black-0, $fw-normal);
-  color: red;
+  color: white;
 }
