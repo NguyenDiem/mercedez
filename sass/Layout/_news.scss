@@ -1,0 +1,30 @@
+.mercedes__News{
+    .nav-tabs{
+        display: flex;
+        justify-content: space-around;
+        width: 25%;
+        margin: 0 auto;
+        border: none;
+        background-color: transparent;
+        .nav-item{
+            .nav-link{
+                color: $color-white-0;
+                transition: all 0.2s;
+                border: none;
+                &:active, &:focus{
+                    color: $color-blue-0;
+                    background-color: transparent;
+                    border-bottom: 3px solid $color-blue-0;
+                }
+                &:hover{
+                    color: $color-blue-0;
+                }
+            }
+            .active{
+                color: $color-blue-0;
+                background-color: initial;
+                border-bottom: 3px solid $color-blue-0;
+            }
+        }
+    }
+}
