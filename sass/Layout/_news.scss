@@ -29,8 +29,20 @@
     }
     .tab-content{
         .tab-pane{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(11,1fr);
+            .itemsLarge{
+                grid-column: 1/ span 2;
+                grid-row: 1/ span 2;
+            }
             .newsItem{
                 position: relative;
+                height: auto;
+                img{
+                    width: 100%;
+                    // height: auto;
+                }
                 .newsContent{
                     position: absolute;
                     bottom: 0;
