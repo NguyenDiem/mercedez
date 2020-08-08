@@ -6,8 +6,15 @@
 
 html,
 body {
-  font-family: "MBCorpo", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: $color-black-0;
-  @include styleText($fs-0, $color-black-0, $fw-normal);
-  color: white;
+  @include styleText($fs-0, $color-white-0, $fw-normal);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
