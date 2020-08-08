@@ -35,6 +35,10 @@
 @media screen and (max-width: 1015px) {
   .carousel-caption {
     top: 40px;
+    width: 70%;
+    p:nth-of-type(1) {
+      font-size: 32px;
+    }
   }
 }
 
