@@ -4,14 +4,18 @@
         img{
             margin: $mg-4;
             transition: all 0.5s;
-            &:hover{
-               border-bottom: 6px solid $color-blue-0;
+            &::after{
+                content: "";
+                width: 100%;
+                height: 3px;
+                display: block;
+                color: $color-blue-0;
             }
         }
-        
     }
 }
 @media screen and (max-width: 768px){
-    .info__content{ padding: 0 $pd-2;
+    .info__content{ 
+        padding: 0 $pd-2;
     }
 }
