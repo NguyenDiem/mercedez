@@ -2,18 +2,21 @@
     padding: 0 $pd-6*2;
     .info__img{
         img{
-            margin: $mg-4;
-            transition: all 0.5s;
-            &::after{
+            position: relative;
+            img:after{
+                position: absolute;
+                display: block;
                 content: "";
                 width: 100%;
                 height: 3px;
-                display: block;
-                color: $color-blue-0;
+                left: 0;
+                bottom: 0;
+                background-color: $color-blue-0;          
             }
-        }
+        }	
     }
 }
+
 @media screen and (max-width: 768px){
     .info__content{ 
         padding: 0 $pd-2;
