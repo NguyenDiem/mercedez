@@ -45,7 +45,20 @@ btnToggler.onclick = function () {
     nav.classList.add("open");
   }
 };
+var shareElement = document.getElementById("strap__social-share");
+shareElement.onclick = function () {
+  var nav = document.querySelector(".strap__social");
+  if (nav.classList.contains("open")) {
+    nav.classList.remove("open");
+  } else {
+    nav.classList.add("open");
+  }
+};
+
 window.onresize = function () {
+  if (window.innerWidth > 767) {
+    document.querySelector(".strap__social").classList.remove("open");
+  }
   if (window.innerWidth > 1280) {
     document.querySelector(".navbar-expand").classList.remove("open");
   }
