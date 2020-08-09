@@ -10,6 +10,9 @@
       color: $color-blue-0;
     }
   }
+  .navbar-expand .navbar-nav .nav-link-search:hover{
+    color: $color-white-0;
+  }
 }
 .header__sub-menu {
   li {
@@ -22,6 +25,10 @@
     }
     &:last-child {
       padding: 0;
+    }
+    &:hover a{
+      color: $color-blue-0;
+      text-decoration: none;
     }
   }
 }

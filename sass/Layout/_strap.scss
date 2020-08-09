@@ -24,10 +24,10 @@
         }
       }
       .strap__social {
-        &:hover {
-          i {
+        i:hover {
+          
             color: $color-blue-0;
-          }
+          
         }
         .link--hidden {
           display: none;
@@ -37,8 +37,8 @@
   }
 }
 .strap__item {
-  transform: translateX(190px);
-  transition: all 0.3s;
+  transform: translateX(230px);
+  transition: all 0.7s;
   &:hover {
     transform: translateX(0px);
   }
