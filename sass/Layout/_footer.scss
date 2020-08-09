@@ -66,7 +66,7 @@ footer{
     }
 }
 .footer_Item {
-    @include resposive(medium){
+    @include responsive(medium){
         .Lagauge{
             text-align: center;
         }
@@ -74,7 +74,7 @@ footer{
     
 }
 .footer_Item .Contact{
-    @include resposive(medium){
+    @include responsive(medium){
         ul{
             text-align: left!important;
         }
