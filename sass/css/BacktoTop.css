@@ -1,0 +1,22 @@
+.BACKTOTOP {
+  position: relative;
+}
+
+.BACKTOTOP .backToTop {
+  position: absolute;
+  bottom: 25px;
+  right: 10px;
+  opacity: 1;
+  margin-left: 10px;
+  color: #999999;
+  transition: all 0.5s;
+}
+
+.BACKTOTOP .backToTop:hover {
+  color: #0088c6;
+}
+
+.BACKTOTOP .cd-top--fade-out {
+  opacity: 1;
+}
+/*# sourceMappingURL=BacktoTop.css.map */

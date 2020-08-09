@@ -1,0 +1,37 @@
+.more-topics{
+    background-color: $color-black-0;
+    .Content{
+        padding-top: $pd-1;
+        
+        .row{
+            width: 95%;
+            margin: auto;
+        .content__Item{
+            padding: 0px;
+           
+            @include styleText($fs-1,$color-white-0,$fw-normal);
+            h3{
+                @include styleText($fs-3,$color-white-0,$fw-normal);
+                padding-bottom:  $pd-2;
+                border-bottom: 1px solid $color-black-2;
+                margin-bottom: $mg-1;
+            }
+            ul{
+                list-style: none;
+                li{
+                    @include styleText($fs-1,$color-gray-1,$fw-normal);
+                    
+                    span{
+                        transition: all 0.5s;
+                        &:hover{
+                            cursor: pointer;
+                            @include styleText($fs-1,$color-blue-0,$fw-normal);
+                        }
+                    }
+                }
+                
+            }
+        }}
+        
+    }
+}

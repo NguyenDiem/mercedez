@@ -1,16 +1,24 @@
+
 @import "./Helper/variables";
 @import "./Helper/mixin";
 
 @import "./Base/reset";
 // file SASS cua thu vien o day
 @import "./Base/customize";
-
+// component
 @import "./Component/button";
 
+//Layout
+@import "./Component/BacktoTop.scss";
 @import "./Layout/header";
 @import "./Layout/footer";
 @import "./Layout/info";
 @import "./Layout/news";
+@import './Layout/information';
+@import './Layout/Logo';
+@import './Layout/Moretopics';
+@import './Layout/StayInformed';
+
 // Page
 
 // Theme

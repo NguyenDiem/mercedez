@@ -1,0 +1,29 @@
+.stay__Item1{
+    button{
+        @include button($color-black-3,$color-black-4,$color-gray-2, 0px,$pd-0);
+        border: none ;
+        text-align: left;
+        height: 35px;
+        @include styleText($fs-1,$color-gray-1,$fw-normal);
+        span{
+            transition: all 0.5s;
+            margin-left: $mg-0;
+        }
+        &:hover{
+            span{
+            cursor: pointer;
+            color: $color-blue-0;
+            }
+            
+        }
+        i{
+            transition: all 0.5s;
+            margin-right: $mg-0;
+            font-size: $fs-0;
+            &:hover{
+                cursor: pointer;
+                color: $color-blue-0;
+            }
+        }
+    }
+}

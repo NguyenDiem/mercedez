@@ -3,3 +3,23 @@
   color: $color;
   font-weight: $fw;
 }
+@mixin button($bg1,$bg2,$color,$pdx,$pdy) {
+  background: linear-gradient($bg1,$bg2);
+  color: $color;
+  padding: $pdx $pdy;
+}
+// screen:small, medium...
+@mixin resposive($screen){
+  //kiem tra screen co ton tai trong $breakponit hay ko
+  @if( map-has-key($map:$breakpoints , $key:$screen )){
+      // Nếu tìm thấy
+      //Lấy giá trị của screen gán vào cho biến $value
+      $value: map-get($map:$breakpoints , $key:$screen );
+   @media screen and (max-width:$value) {
+       @content;
+   }
+  }
+  @else{
+      @warn 'Screem ko tồn tại';
+  }
+}
