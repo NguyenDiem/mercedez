@@ -1,0 +1,22 @@
+.More-infomation {
+    background-color: $color-black-0;
+    .information__content {
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: $mg-1;
+        .content__Item {
+            margin: 0px;
+            margin-right: $mg-4;
+            @include styleText($fs-1,$color-white-0,$fw-normal);
+        }
+    }
+    .infomation__detail{
+        width: 95%;
+        margin: 0 auto;
+        p{
+            @include styleText($fs-1,$color-white-0,$fw-normal);
+            margin: 0px;
+            padding: $pd-0 0;
+        }
+    }
+}

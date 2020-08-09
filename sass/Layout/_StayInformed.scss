@@ -1,0 +1,76 @@
+.Stay-informed{
+    background-color: $color-black-0;
+    padding: 30px 0px 0px;
+    
+    .Stay__content{
+        width: 95%;
+        margin: 0 auto;
+        border-bottom: 1px solid $color-black-2;
+        h3{
+            @include styleText($fs-3,$color-white-0,$fw-normal);
+            padding: $pd-1 0;
+            border-bottom: 1px solid $color-black-2;
+        }
+        .stay__Item1{
+            p{
+                @include styleText($fs-1,$color-gray-1,$fw-normal);
+                padding-top: $pd-0;
+            }
+            .email{
+                
+                padding: $pd-0 $pd-1;
+                background-color: $color-black-2;
+                border: 1px solid;
+                margin-bottom: $mg-0;
+                &::placeholder{
+                    color: $color-white-0;
+                }
+                &:focus{
+                    outline: none;
+                    border: 1px solid $color-gray-1;
+                }
+            }
+            .form-check{
+                margin-top: $mg-1;
+                 .form-check-input{
+                     &:hover{
+                         cursor: pointer;
+                     }
+                 }         
+                p{
+                    color: $color-gray-1;
+                    margin: 0px 5px;
+                    padding: 0px;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    span{
+                        color: $color-white-0;
+                        &:hover{
+                            cursor: pointer;
+                            color: $color-blue-0;
+                        }
+                    }
+                }
+            }
+            
+        }
+        .stay__Item2{
+            ul{
+                
+                li{
+                    display: inline;
+                    margin-right:$mg-4*2;
+                    i{
+                        @include styleText($fs-1,$color-gray-1,$fw-normal);
+                        transition: all .5s;
+                        &:hover{
+                            cursor: pointer;
+                            color: $color-blue-0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

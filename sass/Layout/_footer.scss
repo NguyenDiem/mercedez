@@ -1,0 +1,82 @@
+footer{
+    background-color: $color-black-0;
+    .Footer__content{
+        width: 95%; 
+        margin: 0 auto;
+        p{
+            padding-top: $pd-1;
+            @include styleText($fs-1,$color-gray-1,$fw-normal);
+            span{
+                color: $color-white-0;
+                transition: all 0.5s;
+                &:hover{
+                    cursor: pointer;
+                    color: $color-blue-0;
+                }
+            }
+        }
+        .footer_Item{
+            padding: $pd-1 0;
+            .Lagauge{
+                ul{
+                    list-style: none;
+                    width: 100%;
+                    li{
+                        
+                        display: inline;
+                        color: $color-blue-0;
+                        .Deutsch{
+                            padding-right: $pd-0;
+                            border-right: 1px solid $color-blue-0;
+                            
+                            &:hover{
+                                cursor: pointer;
+                                color: $color-blue-1;
+                            }
+                        }
+                        .English{
+                            padding-left: $pd-0;
+                            color: $color-white-0;
+                           
+                        }
+                    }
+                }
+            }
+            .Contact{
+                ul{
+                    text-align: right;
+                    margin-right: $mg-4*2;
+                    li{
+                        list-style: none;
+                        display: inline;
+                        color: $color-gray-1;
+                        margin: $mg-1;
+                        span{
+                            @include styleText($fs-1,$color-gray-1,$fw-normal);
+                            transition: all 0.5s;
+                            &:hover{
+                                cursor: pointer;
+                                color: $color-blue-0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.footer_Item {
+    @include resposive(medium){
+        .Lagauge{
+            text-align: center;
+        }
+    }
+    
+}
+.footer_Item .Contact{
+    @include resposive(medium){
+        ul{
+            text-align: left!important;
+        }
+    }
+}
